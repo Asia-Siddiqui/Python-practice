@@ -1,11 +1,54 @@
+# Python Gamma projects
+
 # Exercise 1 
-#     python Gamma
+
+#   Character input
+
 name = input("What is your name: ")
 age = int(input("How old are you: "))
 year = str((2014 - age)+100)
 print(name + " will be 100 years old in the year " + year)
 
 # output is 
+
 What is your name: Fawad
 How old are you: 5
 Fawad will be 100 years old in the year 2109
+
+
+# Exercise 2
+
+# odd or Even 
+
+ num = int(input("give me a number to check: "))
+check = int(input("give me a number to divide by: "))
+
+if num % 10 == 0:
+    print(num, "is a multiple of 4")
+elif num % 2 == 0:
+    print(num, "is an even number")
+else:
+    print(num, "is an odd number")
+
+if num % check == 0:
+    print(num, "divides evenly by", check)
+else:
+    print(num, "does not divide evenly by", check)
+    
+    # Output is
+    
+give me a number to check: 4
+give me a number to divide by: 2
+4 is an even number
+4 divides evenly by 2
+
+give me a number to check: 9
+give me a number to divide by: 3
+9 is an odd number
+9 divides evenly by 3
+
+# Exercise 3
+
+
+
+
