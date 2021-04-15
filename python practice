@@ -266,3 +266,64 @@ Paper wins!
 # another output
 
 
+What's your name?Immal
+And your name?Kashi
+Immal, do yo want to choose rock, paper or scissors?scissors
+Kashi, do you want to choose rock, paper or scissors?rock
+Rock wins!
+
+
+
+#  Exercise 9
+
+
+#  Guessing Game One
+
+
+import random
+
+rd = random.randint(1,9)
+guess = 0
+c = 0
+while guess != rd and guess != "exit":
+    guess = input("Enter a guess between 1 to 9")
+
+    if guess == "exit":
+        break
+
+    guess = int(guess)
+    c += 1
+
+    if guess < rd:
+        print("Too low")
+    elif guess > rd:
+        print("Too high")
+    else:
+        print("Right!")
+        print("You took only", c, "tries!")
+input()
+
+#  Output is
+
+
+Enter a guess between 1 to 91
+Too low
+Enter a guess between 1 to 92
+Too low
+Enter a guess between 1 to 93
+Too low
+Enter a guess between 1 to 94
+Too low
+Enter a guess between 1 to 95
+Too low
+Enter a guess between 1 to 96
+Too low
+Enter a guess between 1 to 97
+Too low
+Enter a guess between 1 to 97
+Too low
+Enter a guess between 1 to 98
+Right!
+You took only 9 tries!
+9
+
